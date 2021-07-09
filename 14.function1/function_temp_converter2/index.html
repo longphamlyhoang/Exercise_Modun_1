@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Temperature Converter</h3>
+    <p><strong>Type a value in the Fahrenhein field to converter the value to Celcius :</strong></p>
+    <div>
+        <P>Fahrenhrit : <select name="" id="demo" style="width: 100px;">
+                <option value="1" id="demo1">1</option>
+                <option value="2" >2</option>
+                <option value="3" >3</option>
+                <option value="4" >4</option>
+            </select></P>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <p>Celcius :</p>
+            </td>
+            <td>
+                <p id="result"> </p>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    numberF = document.getElementById("demo1").value;
+    function Converter(numberF1) {
+        return Celcius = (5 / 9) * (numberF - 32);
+    }
+    document.getElementById("result").innerHTML = Converter(numberF);
+</script>
+
+</html>
