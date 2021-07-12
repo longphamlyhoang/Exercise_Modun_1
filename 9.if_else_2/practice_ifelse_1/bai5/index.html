@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>long</title>
+</head>
+<body>
+    <script>
+        let pointDKT = +prompt("nhập điểm kiểm tra");
+        let pointKT = +prompt("nhập điểm giữa kì");
+        let pointCK = +prompt("nhập điểm cuối kì");
+        let averagepoint = (pointDKT+ pointKT + pointCK*2)/4;
+        if (averagepoint>0 && averagepoint<5) {
+            alert("Yếu");
+        } else if (averagepoint>=5 && averagepoint<7) {
+            alert("TB");
+        } else if (averagepoint>=7 && averagepoint<8) {
+            alert("K");
+        } else if (averagepoint>=8 && averagepoint<9) {
+            alert("G");
+        } else if (averagepoint>=9 && averagepoint<10) {
+            alert("XS");
+        }
+    </script>
+</body>
+</html>

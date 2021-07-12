@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbera = +prompt("nhập vào số a:");
+        let numberb = +prompt("nhập vào số b: ");
+        document.write(`phương trình bạn vừa nhập là: ${numbera}x+ ${numberb} <br> `);
+        if (numbera==0) {
+            if (numberb==0) {
+                document.write("phương trình này có vô số nghiệm.");
+            } else {
+                document.write("phương trình vô nghiệm");
+            } 
+        } else {
+            let text = (-numberb)/numbera;
+            document.write(`phương trình có nghiệm x = ${text}.`)
+        }
+    </script>
+</body>
+</html>

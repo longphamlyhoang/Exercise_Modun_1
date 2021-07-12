@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giải phương trình bậc 2</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("nhập a: ");
+        let b = +prompt("Nhập b: ");
+        let c = +prompt("Nhập c :");
+        const detta = b * b - 4 * a * c;
+        let x1 = (-b- Math.sqrt(detta))/(2*a);
+        let x2 = (-b+ Math.sqrt(detta))/(2*a);
+        let x0 = -b/(2*a);
+        if (detta>0) {
+            document.write(`phương trình bậc hai có dạng là ${a}x2+${b}x+${c} <br>`);
+            document.write("phương trình có 2 nghiệm : " +"<br>");
+            document.write(`Nghiệm x1 = ${x1} <br>`);
+            document.write(`Nghiệm x2 ${x2}`);
+
+        } else if (detta==0) {
+            document.write(`phương trình bậc hai có dạng là ${a}x2+${b}x+${c} <br>`);
+            document.write("phương trình có 2 nghiệm kép"+"<br>");
+            document.write(`x1 = x2 = ${x0}`);
+        } else {
+            document.write(`phương trình bậc hai có dạng là ${a}x2+${b}x+${c} <br>`);
+            document.write("phương trình vô nghiệm")
+        }
+    </script>
+</body>
+
+</html>

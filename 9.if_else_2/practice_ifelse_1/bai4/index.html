@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberone = +prompt("Enter number one");
+        let numbertwo = +prompt("Enter number two");
+        let numberthree = +prompt("Enter number three");
+        if (numberone>numbertwo) {
+            if (numberone>numberthree) {
+                alert(`${numberone} là lớn nhất`)
+            } else {
+                alert(`${numberthree} lớn nhất`)
+            }
+        } else if (numbertwo>numberthree) {
+            alert(`${numbertwo} là lớn nhất`)
+        } else {
+            alert(`${numberthree} là lớn nhất`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>long</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="text" id="Month">
+            </td>
+            <td>
+                <input type="button" value="Tính số ngày" onclick="myfunction()">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p id="demo"></p>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function myfunction() {
+            let month = +(document.getElementById("Month").value);
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 8:
+                case 7:
+                case 10:
+                case 12:
+                    document.getElementById("demo").innerHTML = "month have 31 days";
+                    break;
+                case 2:
+                    document.getElementById("demo").innerHTML = "month have 28 and 29 days";
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    document.getElementById("demo").innerHTML = "month have 30 days";
+                    break;
+                default:
+                    alert("Enter is month");
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

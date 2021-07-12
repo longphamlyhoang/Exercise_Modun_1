@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>long</title>
+</head>
+<body>
+    <script>
+        let n1 = 0;
+        let n2 = 1;
+        let nextnumber;
+        total = 0;
+        for (let index = 0; index < 20; index++) {
+            nextnumber = n1+n2;
+            n1 = n2;
+            n2 = nextnumber;
+            total+=n1;
+            document.write(n1+"<br>");
+            
+        }
+        document.write(`Tổng của fibonacci : ${total}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let array = [30, 5, 7, 4, 8, 10, 38, 48, 47, 36, 12, 46];
+    let count = 0;
+    let arr = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] >= 10) {
+            count += 1;
+            arr.push(array[i]);
+        }
+
+    }
+    document.write("có :" + count + " số lớn hơn hoặc bằng 10 và các số đó là :" + arr);
+</script>
+
+</html>

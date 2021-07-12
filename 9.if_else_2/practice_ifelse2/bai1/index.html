@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <p>C :</p>
+            </td>
+            <td>
+                <input type="text" value="" id="demo1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>F :</p>
+            </td>
+            <td>
+                <input type="text" id="demo2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="convert()">convert</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function convert() {
+            let valueC = document.getElementById("demo1").value;
+            let valueF = (valueC *9)/5 +32;
+            document.getElementById("demo2").value = valueF;
+        }
+    </script>
+</body>
+
+</html>

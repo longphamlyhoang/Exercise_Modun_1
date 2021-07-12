@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let array = [5,3,6,3,30,74,61,5,6,84];
+    let max = array[0];
+    let sum = 0;
+    let avg = 0;
+    for (let index = 0; index < array.length; index++) {
+        if (array[index]>max) {
+            max = array[index]
+        }
+        sum+=array[index]
+    }
+    avg = sum/array.length;
+    document.write(`giá trị lớn nhất trong mảng là ${max}; giá trị trung bình các phần tử trong mảng là ${avg}`)
+</script>
+</html>

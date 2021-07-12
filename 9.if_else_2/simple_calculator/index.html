@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>long</title>
+</head>
+<style>
+    table,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table,
+    td {
+        text-align: center;
+    }
+
+    table {
+        width: 150px;
+    }
+</style>
+
+<body>
+    <table>
+        <caption>simple calculator</caption>
+        <tr>
+            <th colspan="4">
+                <input type="text" name="displayScreen" id="displayScreen">
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="2" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="3" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="+" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="5" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="6" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="-" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="8" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="9" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="x" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="C" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="0" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="=" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+            <td>
+                <input type="button" value="/" class="button displayScreen" onclick="calculate(this.value)">
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    function calculate(key) {
+        let val = document.getElementsById("displayScreen").value;
+        switch (key) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 0:
+            case '+':
+            case '-':
+            case '/':
+            case 'x':
+                val += key;
+            case '=':
+                aqua();
+            case 'C':
+                remove();
+
+        }
+
+    }
+    function aqua() {
+        var number = document.getElementById("displayScreen").value;
+        if (number) {
+            document.getElementById("displayScreen").value = eval(number);
+        }
+    }
+    function remove() {
+        document.getElementById("displayScreen").value = '';
+    }
+</script>
+
+</html>

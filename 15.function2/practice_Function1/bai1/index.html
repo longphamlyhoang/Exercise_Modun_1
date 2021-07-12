@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alertMessage()">click me</button>
+    <input type="text" onchange="myMessage(this.value)">
+    <p id="demo"></p>
+</body>
+<script>
+    function alertMessage() {
+        alert("xin chào")
+    }   
+    function myMessage(message) {
+        alert(message);
+    }
+    function displayMessage() {
+        document.getElementById("demo").innerHTML = myMessage(this.value);
+    }
+    displayMessage();
+</script>
+</html>

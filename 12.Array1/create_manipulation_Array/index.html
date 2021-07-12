@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Screen</title>
+</head>
+<style>
+    body {
+        padding-top: 50px;
+    }
+</style>
+
+<body>
+    <h1>Sample Screen</h1>
+    <input type="text" id="textvalue">
+    <input type="button" id="buttonadd" value="Add" onclick="AddElement()">
+    <input type="button" id="buttondisplay" value="Display" onclick="DisplayElement()">
+    <p id="result"></p>
+</body>
+<script>
+    let x = 0;
+    let array = Array();
+    function AddElement() {
+        array[x] = document.getElementById("textvalue").value;
+        alert("Element: " + array[x] + " Add at index " + x);
+        x++;
+        document.getElementById("textvalue").value = "";
+    }
+    function DisplayElement() {
+        let e = "<hr/>";
+        for (let i = 0; i < array.length; i++) {
+            e += "Element " + i + " = " + array[i] + "<br/>";
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let money = +prompt("Tiền hoa hồng nhận được");
+        if (money>=200000 && money<500000) {
+            let Commission = money*0.03;
+            alert(Commission);
+        } else if (money>=500000 && money<700000) {
+            let Commission = 200000*0.03 + (money-200000)*0.05;
+            alert(Commission);
+        } else {
+            let Commission = 200000*0.03 + 300000*0.05 + (money-500000)*0.1;
+            alert(Commission);
+        }
+    </script>
+</body>
+</html>
